@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  time_limit: 2015-02-08 05:18:19
+  description: MyText
+  is_active: false
+  display_order: 1
+
+two:
+  name: MyString
+  time_limit: 2015-02-08 05:18:19
+  description: MyText
+  is_active: false
+  display_order: 1

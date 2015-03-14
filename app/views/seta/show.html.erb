@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @setum.name %>
+</p>
+
+<p>
+  <strong>Time limit:</strong>
+  <%= @setum.time_limit %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @setum.description %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @setum.is_active %>
+</p>
+
+<p>
+  <strong>Display order:</strong>
+  <%= @setum.display_order %>
+</p>
+
+<%= link_to 'Edit', edit_setum_path(@setum) %> |
+<%= link_to 'Back', seta_path %>

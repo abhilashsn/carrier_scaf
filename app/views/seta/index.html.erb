@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Seta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Time limit</th>
+      <th>Description</th>
+      <th>Is active</th>
+      <th>Display order</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seta.each do |setum| %>
+      <tr>
+        <td><%= setum.name %></td>
+        <td><%= setum.time_limit %></td>
+        <td><%= setum.description %></td>
+        <td><%= setum.is_active %></td>
+        <td><%= setum.display_order %></td>
+        <td><%= link_to 'Show', setum %></td>
+        <td><%= link_to 'Edit', edit_setum_path(setum) %></td>
+        <td><%= link_to 'Destroy', setum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Setum', new_setum_path %>
